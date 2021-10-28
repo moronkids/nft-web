@@ -25,7 +25,7 @@ function Index() {
           <div
             className=""
             style={{
-              background: "#f8fffd",
+              background: "#616167",
               paddingTop: "30px",
               paddingBottom: "70px",
             }}

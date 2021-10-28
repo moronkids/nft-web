@@ -7,10 +7,14 @@ function Navbar() {
   return (
     <>
       <div
-        className={`navbar ${scroll && "active"}`}
+        className={`navbar active`}
+        // className={`navbar ${scroll && "active"}`}
         style={{ zIndex: "999999" }}
       >
         <ul className="">
+          <li>
+            <span>Connect Wallet</span>
+          </li>
           <li>DESCRIPTION</li>
           <li>FAQ</li>
         </ul>

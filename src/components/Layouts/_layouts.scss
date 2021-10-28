@@ -19,6 +19,16 @@
         visibility: visible !important;
         li {
             cursor: pointer;
+            span {
+                border-radius: 25px;
+                padding: 8px 15px;
+                background-color: orange;
+            }
+            span:hover {
+                background-color: white;
+                color: orange;
+                border: 3px solid orange;
+            }
         }
         li:hover {
             color: orange;
@@ -31,9 +41,10 @@
     visibility: visible;
 }
 .navbar-mobile {
+    background-color: rgb(45, 45, 97);
     width: 100vw;
     height: 70px;
-    background-color: white;
+    // background-color: white;
     display: none;
     position: fixed;
     @media (max-width: 524px) {
