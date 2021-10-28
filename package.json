@@ -1,0 +1,23 @@
+{
+  "name": "nft-web",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-reveal": "^1.2.2",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.0",
+    "sass": "^1.43.4",
+    "vite": "^2.6.4",
+    "vite-tsconfig-paths": "^3.3.17"
+  }
+}
