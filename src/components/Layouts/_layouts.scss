@@ -50,10 +50,14 @@
     position: fixed;
     @media (max-width: 524px) {
         display: block;
+        // z-index: 100;
+        // -webkit-box-shadow: 0 0 5px rgba(40, 128, 1, 1);
+        // -moz-box-shadow: 0 0 5px rgba(40, 128, 1, 1);
+        // box-shadow: 0 0 5px rgba(40, 128, 1, 1);
+        // box-shadow: orange;
         z-index: 100;
-        -webkit-box-shadow: 0 0 5px rgba(40, 128, 1, 1);
-        -moz-box-shadow: 0 0 5px rgba(40, 128, 1, 1);
-        box-shadow: 0 0 5px rgba(40, 128, 1, 1);
+        box-shadow: orange;
+        background-color: #030303;
     }
 }
 #menuToggle {
