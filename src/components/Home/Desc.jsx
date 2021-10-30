@@ -32,12 +32,33 @@ function Desc() {
                 <div>
                   NFT Pizza Slice = 0.99 SOL
                   <ul>
-                    <li> Unique Pizza Slice</li>
-                    <li>
+                    <li
+                      style={{
+                        border: "none",
+                        padding: "0px",
+                        listStyle: "disc",
+                      }}
+                    >
+                      {" "}
+                      Unique Pizza Slice
+                    </li>
+                    <li
+                      style={{
+                        border: "none",
+                        padding: "0px",
+                        listStyle: "disc",
+                      }}
+                    >
                       Earning will build the first NFT Physical Pizzeria in the
                       world
                     </li>
-                    <li>
+                    <li
+                      style={{
+                        border: "none",
+                        padding: "0px",
+                        listStyle: "disc",
+                      }}
+                    >
                       Lucky Members will be able to customize their NFT Pizza
                       Slice
                     </li>

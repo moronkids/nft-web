@@ -99,6 +99,12 @@
         ul,
         ol {
             list-style: none;
+            li {
+                padding: 20px;
+                border: 2px solid orange;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
         }
     }
     &-faq {
