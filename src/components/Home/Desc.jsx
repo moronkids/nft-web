@@ -31,7 +31,7 @@ function Desc() {
                 </div>
                 <div>
                   NFT Pizza Slice = 0.99 SOL
-                  <ul>
+                  <ul className="must-pad">
                     <li
                       style={{
                         border: "none",

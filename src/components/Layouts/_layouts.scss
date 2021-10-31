@@ -19,6 +19,7 @@
         visibility: visible !important;
         @media (max-width: 1367px) {
             font-size: 23px;
+            padding-left: 0px;
         }
         li {
             cursor: pointer;
@@ -169,17 +170,16 @@
 }
 
 .bar-mobile {
-    height: 400px;
     color: #ffffff;
-    background-color: #8a725c !important;
+    background-color: #170d29 !important;
     list-style: none;
     text-align: center;
     margin: 0 auto;
-    top: -500px;
-    opacity: 0;
-    visibility: hidden;
-    transition-delay: 0s;
+    top: -400px;
+    // opacity: 1;
+    // visibility: hidden;
     position: absolute;
+
     width: 100vw;
     height: 110px;
     display: flex;
@@ -199,14 +199,18 @@
     margin-top: 70px;
     gap: 30px;
     transition: all 0.5s;
-    -webkit-transition: all 0.25s;
+    transition: top 0.3s ease;
+    -webkit-transition: all 0.5s;
+    z-index: 100;
 }
 .bar-mobile.active {
-    transition: all 0.5s;
-    -webkit-transition: all 0.25s;
+    transition: top 0.3s ease;
+    // transition: all 0.5s;
+    // -webkit-transition: all 0.5s;
+    // transition-delay: 0.5s;
     z-index: 100;
-    opacity: 1;
-    visibility: visible;
-    top: 0px;
-    position: fixed;
+    // opacity: 1;
+    // visibility: visible;
+    top: 0;
+    // position: fixed;
 }
