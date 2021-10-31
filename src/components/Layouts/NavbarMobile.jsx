@@ -5,12 +5,14 @@ function NavbarMobile() {
   const { barMobile, setBarMobile } = useContext(Hooks);
   return (
     <>
-      <div className="navbar-mobile" onClick={() => setBarMobile(!barMobile)}>
+      <div className="navbar-mobile">
         <nav role="navigation">
           <div>
-            <span className="connect">Connect Wallet</span>
+            <a href="http://">
+              <span className="connect">Connect Wallet</span>
+            </a>
           </div>
-          <div id="menuToggle">
+          <div id="menuToggle" onClick={() => setBarMobile(!barMobile)}>
             <input type="checkbox" />
             <span></span>
             <span></span>
