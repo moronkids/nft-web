@@ -17,6 +17,9 @@
         color: white;
         opacity: 1 !important;
         visibility: visible !important;
+        @media (max-width: 1367px) {
+            font-size: 23px;
+        }
         li {
             cursor: pointer;
             span {
@@ -37,7 +40,7 @@
 }
 .navbar.active {
     background-color: black;
-    opacity: 0.8;
+    opacity: 1;
     visibility: visible;
 }
 .navbar-mobile {
@@ -58,6 +61,23 @@
         z-index: 100;
         box-shadow: orange;
         background-color: #030303;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        .connect {
+            border-radius: 25px;
+            padding: 8px 15px;
+            background-color: orange;
+            color: white;
+        }
+        .connect:hover {
+            background-color: white;
+            color: orange;
+            border: 3px solid orange;
+        }
     }
 }
 #menuToggle {
@@ -108,7 +128,8 @@
 #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    // background: #232323;
+    background-color: orange;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3) {
@@ -145,4 +166,47 @@
 #menuToggle input:checked ~ ul {
     transform: scale(1, 1);
     opacity: 1;
+}
+
+.bar-mobile {
+    height: 400px;
+    color: #ffffff;
+    background-color: #8a725c !important;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    top: -500px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0s;
+    position: absolute;
+    width: 100vw;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul,
+    ol {
+        list-style: none;
+        li {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+    margin-top: 70px;
+    gap: 30px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.25s;
+}
+.bar-mobile.active {
+    transition: all 0.5s;
+    -webkit-transition: all 0.25s;
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+    top: 0px;
+    position: fixed;
 }

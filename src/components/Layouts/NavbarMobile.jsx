@@ -1,10 +1,15 @@
-import React from "react";
+import { useContext } from "react";
+import { Hooks } from "@/providers";
 
 function NavbarMobile() {
+  const { barMobile, setBarMobile } = useContext(Hooks);
   return (
     <>
-      <div className="navbar-mobile">
+      <div className="navbar-mobile" onClick={() => setBarMobile(!barMobile)}>
         <nav role="navigation">
+          <div>
+            <span className="connect">Connect Wallet</span>
+          </div>
           <div id="menuToggle">
             <input type="checkbox" />
             <span></span>

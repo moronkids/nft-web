@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 function Desc() {
   return (
     <>
-      <div className="home-desc">
+      <div className="home-desc" id="home-desc">
         <div className="container">
           <ol>
             <Fade bottom>

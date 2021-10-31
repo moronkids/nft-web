@@ -25,9 +25,11 @@ function Index() {
           <div
             className=""
             style={{
-              background: "#616167",
+              background: "#8A725C",
               paddingTop: "30px",
               paddingBottom: "70px",
+              borderTopLeftRadius: "20px",
+              borderTopRightRadius: "20px",
             }}
           >
             <Faq />

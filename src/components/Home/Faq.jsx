@@ -7,7 +7,7 @@ function Faq() {
   const [collapse, setCollapse] = useState([false, 0]);
   return (
     <>
-      <div className="home-faq">
+      <div className="home-faq" id="home-faq">
         {/* <hr /> */}
         <div>
           <h1>FAQ</h1>
