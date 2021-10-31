@@ -1,8 +1,9 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Hooks } from "providers";
 
 function NavbarMobile() {
   const { barMobile, setBarMobile } = useContext(Hooks);
+  useEffect(() => {}, [barMobile]);
   return (
     <>
       <div className="navbar-mobile">
@@ -13,7 +14,7 @@ function NavbarMobile() {
             </a>
           </div>
           <div id="menuToggle" onClick={() => setBarMobile(!barMobile)}>
-            <input type="checkbox" />
+            <input type="checkbox" value={barMobile} checked={barMobile} />
             <span></span>
             <span></span>
             <span></span>

@@ -98,17 +98,39 @@
         }
         ul,
         ol {
+            // background-position: cover;
             padding-left: 0px;
             list-style: none;
+            div {
+            }
             li {
-                padding: 20px;
-                border: 2px solid orange;
+                background-image: url("../../assets/img/bgdesc.svg");
+                background-size: 642.5px;
+                background-repeat: repeat;
+                // backgr
+                padding: 40px 20px;
+                border: 2px solid #331766;
                 margin-bottom: 20px;
                 border-radius: 10px;
             }
         }
         .must-pad {
             padding-left: 20px;
+        }
+        .flex-only {
+            flex-direction: row;
+            display: flex;
+            justify-content: flex-start;
+            @media (max-width: 524px) {
+                display: block;
+                margin: 0 auto;
+                // text-align: center;
+            }
+            // style={{
+            //         display: "flex",
+            //         flexDirection: "row",
+            //         justifyContent: "flex-start",
+            //       }}
         }
     }
     &-faq {
@@ -127,7 +149,7 @@
                 justify-content: space-between;
                 align-items: center;
                 margin: 0 auto;
-                height: 20px;
+                height: 25px;
                 & .arrow {
                     transform: rotate(180deg);
                     cursor: pointer;

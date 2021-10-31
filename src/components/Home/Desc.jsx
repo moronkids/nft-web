@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Roadmap from "assets/img/roadmap.jpg";
+import Pizza from "assets/img/pizza.png";
+
 import Fade from "react-reveal/Fade";
+import { Hooks } from "providers";
 function Desc() {
+  const { barMobile, setBarMobile } = useContext(Hooks);
   return (
     <>
       <div className="home-desc" id="home-desc">
@@ -10,17 +14,47 @@ function Desc() {
             <Fade bottom>
               <li>
                 <div className="title">What is NFT Pizzeria?</div>
-                <div>
-                  NFT Pizzeria is a collection of 3174 uniquely and
-                  algorithmically generated humanized Pizza Slice. Owning a NFT
-                  pizzeria, is not just holding an NFT but it’s also owning a
-                  piece of ownership of the first NFT Pizzeria Restaurant. In
-                  Fact, our main goal is to open the first Physical NFT Pizzeria
-                  in the World and be the First Project to let the first members
-                  to be able to customize their own NFT Pizza Slice. Once the
-                  100 Pizza Slice will be made, NFT Pizzeria will be open
-                  randomly during the week and will let few lucky Discord
-                  members to order customized pizza.
+                <div className="flex-only">
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      width: "100%",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      position: "relative",
+                      // flexDirection: row;
+                      // width: 100%;
+                      // align-items: flex-end;
+                      // justify-content: end;
+                    }}
+                  >
+                    {/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/h94V2dv/pizza.png" alt="pizza" border="0"></a> */}
+                    <img
+                      src="https://i.ibb.co/h94V2dv/pizza.png"
+                      alt=""
+                      srcset=""
+                      height="60px"
+                      width="auto"
+                      style={{
+                        // position: "absolute",
+                        // top: "-10px",
+                        padding: "20px",
+                      }}
+                    />
+                  </div>
+                  <div>
+                    NFT Pizzeria is a collection of 3174 uniquely and
+                    algorithmically generated humanized Pizza Slice. Owning a
+                    NFT pizzeria, is not just holding an NFT but it’s also
+                    owning a piece of ownership of the first NFT Pizzeria
+                    Restaurant. In Fact, our main goal is to open the first
+                    Physical NFT Pizzeria in the World and be the First Project
+                    to let the first members to be able to customize their own
+                    NFT Pizza Slice. Once the 100 Pizza Slice will be made, NFT
+                    Pizzeria will be open randomly during the week and will let
+                    few lucky Discord members to order customized pizza.
+                  </div>
                 </div>
               </li>
             </Fade>
@@ -30,39 +64,10 @@ function Desc() {
                   Pizza isn’t a trend, it’s a way of life
                 </div>
                 <div>
-                  NFT Pizza Slice = 0.99 SOL
-                  <ul className="must-pad">
-                    <li
-                      style={{
-                        border: "none",
-                        padding: "0px",
-                        listStyle: "disc",
-                      }}
-                    >
-                      {" "}
-                      Unique Pizza Slice
-                    </li>
-                    <li
-                      style={{
-                        border: "none",
-                        padding: "0px",
-                        listStyle: "disc",
-                      }}
-                    >
-                      Earning will build the first NFT Physical Pizzeria in the
-                      world
-                    </li>
-                    <li
-                      style={{
-                        border: "none",
-                        padding: "0px",
-                        listStyle: "disc",
-                      }}
-                    >
-                      Lucky Members will be able to customize their NFT Pizza
-                      Slice
-                    </li>
-                  </ul>
+                  NFT Pizza Slice = 0.99 SOL <br /> Unique Pizza Slice <br />{" "}
+                  Earning will build the first NFT Physical Pizzeria in the
+                  world <br /> Lucky Members will be able to customize their NFT
+                  Pizza Slice
                 </div>
               </li>
             </Fade>
